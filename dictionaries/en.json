@@ -1,6 +1,35 @@
 {
-  "app": {
+  "tr": {
+    "iam": "Hey, i am",
+    "alexpervitin": "Alex Pervitin",
+    "descaboutme": "A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product",
+    "projects": "Projects",
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "aboutme": "About me",
+    "contact": "Contact",
+    "aboutmedesc": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology",
+    "getme": "Get to know me",
+    "iamfront": "I am a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product.",
+    "workexp": "Work expirience",
+    "devprojects": "Developing clients projects of varying complexity (fintech, online stores, hubs, mvps)",
+    "projectscratchtoend": "Development of projects from scratch to the end",
+    "workinteam": "Working in small and big teams",
+    "writingcleancode": "Writing clean, understandable and scalable code",
+    "unfamiliartech": "Working with unfamiliar technologies and ambitious tasks",
+    "openttojob": "I am open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then dont hesitate to contact me.",
+    "myskills": "My Skills",
+    "aboutmyprojects": "Here you will find some of the personal and clients projects that I created with each project containing its own details",
+    "details": "Details",
+    "freecontact": "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible",
+    "submit": "Submit",
+    "enteryourname": "Enter your name",
+    "enteryouremail": "Enter your email",
+    "enteryourmessage": "Enter your message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "social": "Social",
+    "hasbeendevby": "The website has been developed by"
   }
 }

@@ -1,0 +1,9 @@
+export { default as catalogHOM } from './Hometer/Catalog.webp';
+export { default as flatHOM } from './Hometer/Flat.webp';
+export { default as mainHOM } from './Hometer/Main.webp';
+export { default as convertTirnu } from './Tirnu/Convert.webp';
+export { default as homeTirnu } from './Tirnu/Home.webp';
+export { default as paymentsTirnu } from './Tirnu/Payments.webp';
+export { default as homeHypt } from './Hypt/Home.webp';
+export { default as catalogHypt } from './Hypt/Catalog.webp';
+export { default as eventHypt } from './Hypt/Event.webp';
