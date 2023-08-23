@@ -38,15 +38,20 @@ export default function ContactSection({ tr, contactRef }: IContactSection) {
 
   const sendEmail = () => {
     setLoadingForm(true);
-    sendForm('service_oiw6nmb', 'template_p5al9b6', formRef.current, 'test123')
+    sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_KEY as string,
+      process.env.NEXT_PUBLIC_TEMPLATE_KEY as string,
+      formRef.current,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
+    )
       .then(
         () => {
-          toast.success('Сообщение отправлено!', {
+          toast.success(`${tr.message_success}!`, {
             position: 'bottom-left',
           });
         },
         (error) => {
-          toast.error(`Ошибка отправки сообщения, ${error.text}`, {
+          toast.error(`${tr.message_failed}, ${error.text}`, {
             position: 'bottom-left',
           });
         },

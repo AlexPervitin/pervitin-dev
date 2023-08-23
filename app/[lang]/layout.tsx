@@ -52,7 +52,6 @@ export async function generateMetadata({ params }: MetaProps) {
         url: '/app/favicon.ico',
       },
     },
-    manifest: 'https://nextjs.org/manifest.json',
   };
 }
 

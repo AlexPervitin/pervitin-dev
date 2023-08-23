@@ -36,6 +36,8 @@
     "hyptdesc": "Social networking, self-service platform for ticketing, booking and event planning that will provide a seamless experience for both users and business partners.",
     "skidstordesc": "Online store with integrated additional features. The application mainly has the functionality of sorting, searching for goods, and obtaining complete information about the product.",
     "portfolio": "Portfolio",
-    "keywords": "Frontend development, Web development, Site development from scratch"
+    "keywords": "Frontend development, Web development, Site development from scratch",
+    "message_success": "The message has been sent",
+    "message_failed": "Error sending message"
   }
 }
