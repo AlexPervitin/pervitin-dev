@@ -5,6 +5,7 @@ import { getDictionary } from '@/lib/dictionary';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { MetaProps } from '@/types';
+import { Analytics } from '@vercel/analytics/react';
 
 const source_sans = Source_Sans_3({ subsets: ['latin'] });
 
@@ -73,6 +74,7 @@ export default async function RootLayout({
       <body className={source_sans.className}>
         <RootProvider tr={tr}>{children}</RootProvider>
         <ToastContainer newestOnTop />
+        <Analytics />
       </body>
     </html>
   );
