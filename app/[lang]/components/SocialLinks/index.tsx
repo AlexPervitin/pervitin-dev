@@ -15,7 +15,11 @@ export default function SocialLinks({ aside }: ISocialLinks) {
       {SOCIAL_LINKS.map(({ name, Icon, path }) => {
         return (
           <IconButton sx={{ color: '#fff' }} key={name}>
-            <Link href={path} style={{ textDecoration: 'none', color: '#fff' }}>
+            <Link
+              href={path}
+              style={{ textDecoration: 'none', color: '#fff' }}
+              target='_blank'
+            >
               <Icon />
             </Link>
           </IconButton>
