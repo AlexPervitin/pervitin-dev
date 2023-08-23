@@ -3,7 +3,6 @@
 import {
   Box,
   Button,
-  Container,
   Divider,
   List,
   ListItem,
@@ -22,6 +21,7 @@ import { SKILLS } from '@/constants';
 import { Translations } from '@/i18n.config';
 import { MutableRefObject } from 'react';
 import { scrollToRef } from '@/utils';
+import { CustomContainer } from '../HomeSections/styles';
 
 interface IAboutMeSection {
   tr: Translations;
@@ -38,7 +38,7 @@ export default function AboutMeSection({ tr, contactRef }: IAboutMeSection) {
 
   return (
     <HomeSectionWrapper id='about'>
-      <Container>
+      <CustomContainer>
         <AboutSectionContent>
           <Typography variant='lg700' sx={{ textTransform: 'uppercase' }}>
             {tr.aboutme}
@@ -89,7 +89,7 @@ export default function AboutMeSection({ tr, contactRef }: IAboutMeSection) {
             </ContentBlock>
           </ContentWrapper>
         </AboutSectionContent>
-      </Container>
+      </CustomContainer>
     </HomeSectionWrapper>
   );
 }

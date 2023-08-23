@@ -7,3 +7,6 @@ export { default as paymentsTirnu } from './Tirnu/Payments.webp';
 export { default as homeHypt } from './Hypt/Home.webp';
 export { default as catalogHypt } from './Hypt/Catalog.webp';
 export { default as eventHypt } from './Hypt/Event.webp';
+export { default as homeSkidstor } from './Skidstor/Home.webp';
+export { default as productSkidstor } from './Skidstor/Product.webp';
+export { default as toursSkidstor } from './Skidstor/Tours.webp';

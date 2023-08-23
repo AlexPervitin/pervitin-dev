@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Container, Divider, Stack, Typography } from '@mui/material';
+import { Button, Divider, Stack, Typography } from '@mui/material';
 import {
   ContactSectionContent,
   ContactSectionForm,
@@ -14,6 +14,7 @@ import { Translations } from '@/i18n.config';
 import { MutableRefObject, useRef, useState } from 'react';
 import { sendForm } from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { CustomContainer } from '../HomeSections/styles';
 
 interface IContactSection {
   tr: Translations;
@@ -62,7 +63,7 @@ export default function ContactSection({ tr, contactRef }: IContactSection) {
 
   return (
     <ContactSectionWrapper ref={contactRef} id='contact'>
-      <Container>
+      <CustomContainer>
         <ContactSectionContent>
           <Typography variant='lg700'>{tr.contact}</Typography>
           <Divider />
@@ -110,7 +111,7 @@ export default function ContactSection({ tr, contactRef }: IContactSection) {
             </Stack>
           </FormProvider>
         </ContactSectionContent>
-      </Container>
+      </CustomContainer>
     </ContactSectionWrapper>
   );
 }

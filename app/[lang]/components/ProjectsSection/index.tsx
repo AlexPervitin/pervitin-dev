@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Container, Divider, Stack, Typography } from '@mui/material';
+import { Button, Divider, Stack, Typography } from '@mui/material';
 import {
   AboutProjectBlock,
   ProjectItem,
@@ -12,6 +12,7 @@ import { PROJECT_DATA } from '@/constants';
 import ProjectSlider from '../Sliders/ProjectSlider';
 import { Translations } from '@/i18n.config';
 import { MutableRefObject } from 'react';
+import { CustomContainer } from '../HomeSections/styles';
 
 interface IProjectSections {
   tr: Translations;
@@ -19,9 +20,11 @@ interface IProjectSections {
 }
 
 export default function ProjectSections({ tr, projectRef }: IProjectSections) {
+  const projectData = PROJECT_DATA(tr);
+
   return (
     <ProjectsSectionWrapper ref={projectRef} id='projects'>
-      <Container>
+      <CustomContainer>
         <ProjectSectionContent>
           <Typography variant='lg700'>{tr.projects}</Typography>
           <Divider />
@@ -36,7 +39,7 @@ export default function ProjectSections({ tr, projectRef }: IProjectSections) {
             {tr.aboutmyprojects}
           </Typography>
           <Stack sx={{ gap: '40px' }}>
-            {PROJECT_DATA.map((project) => {
+            {projectData.map((project) => {
               return (
                 <ProjectItem key={project.id}>
                   <SliderBlock>
@@ -56,7 +59,7 @@ export default function ProjectSections({ tr, projectRef }: IProjectSections) {
             })}
           </Stack>
         </ProjectSectionContent>
-      </Container>
+      </CustomContainer>
     </ProjectsSectionWrapper>
   );
 }

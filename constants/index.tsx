@@ -9,9 +9,12 @@ import {
   eventHypt,
   flatHOM,
   homeHypt,
+  homeSkidstor,
   homeTirnu,
   mainHOM,
   paymentsTirnu,
+  productSkidstor,
+  toursSkidstor,
 } from '@/assets/images/projects';
 import { Translations } from '@/i18n.config';
 
@@ -54,36 +57,39 @@ export const SOCIAL_LINKS = [
   { Icon: TelegramIcon, path: 'https://t.me/ZeddDead', name: 'Telegram' },
 ];
 
-export const PROJECT_DATA = [
-  {
-    id: 1,
-    title: 'HOMETER',
-    description:
-      'Real estate in Moldova with 3D tour. Prices of houses, apartments, office and commercial premises on Hometer',
-    images: [{ path: mainHOM }, { path: catalogHOM }, { path: flatHOM }],
-  },
-  {
-    id: 2,
-    title: 'TIRNU',
-    description:
-      'At TIRNU, your future is our priority. We empower you to invest according to your preferences, allowing you to relax and enjoy while your funds flourish',
-    images: [
-      { path: homeTirnu },
-      { path: paymentsTirnu },
-      { path: convertTirnu },
-    ],
-  },
-  {
-    id: 3,
-    title: 'HYPT',
-    description: 'Platform about entertainment and nightlife in Dubai',
-    images: [{ path: homeHypt }, { path: catalogHypt }, { path: eventHypt }],
-  },
-  {
-    id: 4,
-    title: 'SKIDSTOR',
-    description:
-      'Development of an online store with integrated additional features',
-    images: [{ path: homeHypt }, { path: catalogHypt }, { path: eventHypt }],
-  },
-];
+export const PROJECT_DATA = (tr: Translations) => {
+  return [
+    {
+      id: 1,
+      title: 'HOMETER',
+      description: tr.hometerdesc,
+      images: [{ path: mainHOM }, { path: catalogHOM }, { path: flatHOM }],
+    },
+    {
+      id: 2,
+      title: 'TIRNU',
+      description: tr.tirnudesc,
+      images: [
+        { path: homeTirnu },
+        { path: paymentsTirnu },
+        { path: convertTirnu },
+      ],
+    },
+    {
+      id: 3,
+      title: 'HYPT',
+      description: tr.hyptdesc,
+      images: [{ path: homeHypt }, { path: catalogHypt }, { path: eventHypt }],
+    },
+    {
+      id: 4,
+      title: 'SKIDSTOR',
+      description: tr.skidstordesc,
+      images: [
+        { path: homeSkidstor },
+        { path: productSkidstor },
+        { path: toursSkidstor },
+      ],
+    },
+  ];
+};

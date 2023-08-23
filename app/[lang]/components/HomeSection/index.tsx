@@ -1,10 +1,11 @@
 'use client';
 
-import { Box, Button, Container, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { HomeSectionContent, HomeSectionWrapper } from './styles';
 import { Translations } from '@/i18n.config';
 import { MutableRefObject } from 'react';
 import { scrollToRef } from '@/utils';
+import { CustomContainer } from '../HomeSections/styles';
 
 interface IHomeSection {
   tr: Translations;
@@ -18,7 +19,7 @@ export default function HomeSection({ tr, projectRef }: IHomeSection) {
 
   return (
     <HomeSectionWrapper id='home'>
-      <Container>
+      <CustomContainer>
         <HomeSectionContent>
           <Box
             sx={{
@@ -33,13 +34,15 @@ export default function HomeSection({ tr, projectRef }: IHomeSection) {
             <Typography variant='lg800' sx={{ textTransform: 'uppercase' }}>
               {tr.iam} {tr.alexpervitin}
             </Typography>
-            <Typography variant='lg500'>{tr.descaboutme}</Typography>
+            <Typography variant='lg500' component='h1'>
+              {tr.descaboutme}
+            </Typography>
             <Button sx={{ maxWidth: '260px' }} onClick={handleGoProjectBlock}>
               {tr.projects}
             </Button>
           </Box>
         </HomeSectionContent>
-      </Container>
+      </CustomContainer>
     </HomeSectionWrapper>
   );
 }

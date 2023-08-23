@@ -75,6 +75,7 @@ export default function LanguageSelect() {
             },
           },
         },
+        disableScrollLock: true,
       }}
       renderValue={(value) => (isLaptop ? '' : getRenderValue(value))}
     >

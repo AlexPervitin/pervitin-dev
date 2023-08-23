@@ -30,6 +30,12 @@
     "email": "Email",
     "message": "Message",
     "social": "Social",
-    "hasbeendevby": "The website has been developed by"
+    "hasbeendevby": "The website has been developed by",
+    "hometerdesc": "Real estate in Moldova with 3D tour. Prices of houses, apartments, office and commercial premises.",
+    "tirnudesc": "Embedded financial services platform offers a unified access point for consumers and businesses, granting them seamless connectivity to a diverse range of financial products.",
+    "hyptdesc": "Social networking, self-service platform for ticketing, booking and event planning that will provide a seamless experience for both users and business partners.",
+    "skidstordesc": "Online store with integrated additional features. The application mainly has the functionality of sorting, searching for goods, and obtaining complete information about the product.",
+    "portfolio": "Portfolio",
+    "keywords": "Frontend development, Web development, Site development from scratch"
   }
 }
