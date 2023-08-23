@@ -44,15 +44,6 @@ export async function generateMetadata({ params }: MetaProps) {
       follow: true,
       nocache: true,
     },
-    icons: {
-      icon: '/app/favicon.ico',
-      shortcut: '/app/favicon.ico',
-      apple: '/app/favicon.ico',
-      other: {
-        rel: '/app/favicon.ico',
-        url: '/app/favicon.ico',
-      },
-    },
   };
 }
 
